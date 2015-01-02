@@ -1,0 +1,80 @@
+package core;
+
+// Other Imports
+import model.Player;
+import networking.response.GameResponse;
+import utility.Log;
+
+public class NetworkManager {
+
+    private NetworkManager() {
+    }
+
+    /**
+     * Push a pending response to a user's queue.
+     *
+     * @param player_id holds the player ID
+     * @param response is the instance containing the response information
+     */
+    public static void addResponseForUser(int player_id, GameResponse response) {
+        GameClient client = GameServer.getInstance().getThreadByPlayerID(player_id);
+
+        if (client != null) {
+            client.addResponseForUpdate(response);
+        } else {
+            Log.printf_e("Failed to create response for user, %d.", player_id);
+        }
+    }
+
+    /**
+     * Push a pending response to all users' queue in the same world.
+     *
+     * @param world_id holds the world ID
+     * @param response is the instance containing the response information
+     */
+    public static void addResponseForWorld(int world_id, GameResponse response) {
+        for (GameClient client : WorldManager.getInstance().getClientsByWorld(world_id)) {
+            client.addResponseForUpdate(response);
+        }
+    }
+
+    public static void addResponseForLobby(String lobby_id, GameResponse response) {
+        for (GameClient client : LobbyManager.getInstance().getClients(lobby_id)) {
+            client.addResponseForUpdate(response);
+        }
+    }
+
+    /**
+     * Push a pending response to all users' queue in the same world except one
+     * user.
+     *
+     * @param world_id holds the world ID
+     * @param player_id holds the excluding player ID
+     * @param response is the instance containing the response information
+     */
+    public static void addResponseToOtherPeopleInTheSameWorld(int world_id, int player_id, GameResponse response) {
+        for (GameClient client : WorldManager.getInstance().getClientsByWorld(world_id)) {
+            Player player = client.getPlayer();
+
+            if (player != null && player.getID() != player_id) {
+                client.addResponseForUpdate(response);
+            }
+        }
+    }
+
+    /**
+     * Push a pending response to all users' queue except one user.
+     *
+     * @param player_id holds the excluding player ID
+     * @param response is the instance containing the response information
+     */
+    public static void addResponseForAllOnlinePlayers(int player_id, GameResponse response) {
+        for (GameClient client : GameServer.getInstance().getActiveThreads().values()) {
+            Player player = client.getPlayer();
+
+            if (player != null && client.getPlayer().getID() != player_id) {
+                client.addResponseForUpdate(response);
+            }
+        }
+    }
+}

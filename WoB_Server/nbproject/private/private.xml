@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Kenneth/Documents/NetBeansProjects/TutorialServer/src/core/GameServer.java</file>
+            <file>file:/C:/Users/Kenneth/Documents/NetBeansProjects/TutorialServer/src/dataAccessLayer/TutorialDAO.java</file>
+            <file>file:/C:/Users/Kenneth/Documents/NetBeansProjects/TutorialServer/src/networking/response/ResponseChallengeShopSpecies.java</file>
+            <file>file:/C:/Users/Kenneth/Documents/NetBeansProjects/TutorialServer/src/metadata/Constants.java</file>
+            <file>file:/C:/Users/Kenneth/Documents/NetBeansProjects/TutorialServer/src/networking/response/ResponseShop.java</file>
+            <file>file:/C:/Users/Kenneth/Documents/NetBeansProjects/TutorialServer/src/metadata/GameRequestTable.java</file>
+            <file>file:/C:/Users/Kenneth/Documents/NetBeansProjects/TutorialServer/src/model/ChallengeData.java</file>
+        </group>
+    </open-files>
+</project-private>

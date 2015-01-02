@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{02697F13-7385-E5BE-DAB5-4DEF4B0F385F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Network\ConnectionManager.cs" />
+     <Compile Include="Assets\Network\DataReader.cs" />
+     <Compile Include="Assets\Network\GamePacket.cs" />
+     <Compile Include="Assets\Network\GamePacketStream.cs" />
+     <Compile Include="Assets\Network\NetworkRequestTable.cs" />
+     <Compile Include="Assets\Network\NetworkResponseTable.cs" />
+     <Compile Include="Assets\Network\Request\NetworkRequest.cs" />
+     <Compile Include="Assets\Network\Request\RequestAvatarList.cs" />
+     <Compile Include="Assets\Network\Request\RequestBadgeList.cs" />
+     <Compile Include="Assets\Network\Request\RequestChallengeShopSpecies.cs" />
+     <Compile Include="Assets\Network\Request\RequestChart.cs" />
+     <Compile Include="Assets\Network\Request\RequestChat.cs" />
+     <Compile Include="Assets\Network\Request\RequestErrorLog.cs" />
+     <Compile Include="Assets\Network\Request\RequestExitGame.cs" />
+     <Compile Include="Assets\Network\Request\RequestGetPlayers.cs" />
+     <Compile Include="Assets\Network\Request\RequestHeartbeat.cs" />
+     <Compile Include="Assets\Network\Request\RequestHighScore.cs" />
+     <Compile Include="Assets\Network\Request\RequestLogin.cs" />
+     <Compile Include="Assets\Network\Request\RequestPrediction.cs" />
+     <Compile Include="Assets\Network\Request\RequestReady.cs" />
+     <Compile Include="Assets\Network\Request\RequestRegister.cs" />
+     <Compile Include="Assets\Network\Request\RequestShop.cs" />
+     <Compile Include="Assets\Network\Request\RequestShopAction.cs" />
+     <Compile Include="Assets\Network\Request\RequestSpeciesAction.cs" />
+     <Compile Include="Assets\Network\Request\RequestSpeciesList.cs" />
+     <Compile Include="Assets\Network\Request\RequestWorldList.cs" />
+     <Compile Include="Assets\Network\Request\RequestWorldMenuAction.cs" />
+     <Compile Include="Assets\Network\Response\NetworkResponse.cs" />
+     <Compile Include="Assets\Network\Response\ResponseAvatarList.cs" />
+     <Compile Include="Assets\Network\Response\ResponseChallengeShopSpecies.cs" />
+     <Compile Include="Assets\Network\Response\ResponseChat.cs" />
+     <Compile Include="Assets\Network\Response\ResponseCreateEnv.cs" />
+     <Compile Include="Assets\Network\Response\ResponseLogin.cs" />
+     <Compile Include="Assets\Network\Response\ResponsePrediction.cs" />
+     <Compile Include="Assets\Network\Response\ResponseReady.cs" />
+     <Compile Include="Assets\Network\Response\ResponseRegister.cs" />
+     <Compile Include="Assets\Network\Response\ResponseShop.cs" />
+     <Compile Include="Assets\Network\Response\ResponseShopAction.cs" />
+     <Compile Include="Assets\Network\Response\ResponseSpeciesAction.cs" />
+     <Compile Include="Assets\Network\Response\ResponseSpeciesCreate.cs" />
+     <Compile Include="Assets\Network\Response\ResponseSpeciesList.cs" />
+     <Compile Include="Assets\Network\Response\ResponseUpdateEnvironmentScore.cs" />
+     <Compile Include="Assets\Network\Response\ResponseUpdateResources.cs" />
+     <Compile Include="Assets\Network\Response\ResponseUpdateTime.cs" />
+     <Compile Include="Assets\Network\Response\ResponseWorldList.cs" />
+     <Compile Include="Assets\Network\Response\ResponseWorldMenuAction.cs" />
+     <Compile Include="Assets\Scripts\AI.cs" />
+     <Compile Include="Assets\Scripts\AnimalAI.cs" />
+     <Compile Include="Assets\Scripts\AvatarData.cs" />
+     <Compile Include="Assets\Scripts\BiomassGraph.cs" />
+     <Compile Include="Assets\Scripts\Camera\BasicCamera.cs" />
+     <Compile Include="Assets\Scripts\Chart.cs" />
+     <Compile Include="Assets\Scripts\Chat\Chat.cs" />
+     <Compile Include="Assets\Scripts\Clock.cs" />
+     <Compile Include="Assets\Scripts\ComparisonTypes.cs" />
+     <Compile Include="Assets\Scripts\Constants.cs" />
+     <Compile Include="Assets\Scripts\DrawLine.cs" />
+     <Compile Include="Assets\Scripts\DropDownMenu.cs" />
+     <Compile Include="Assets\Scripts\EnvironmentScore.cs" />
+     <Compile Include="Assets\Scripts\ExtendedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\ExtraMethods.cs" />
+     <Compile Include="Assets\Scripts\GameLoop.cs" />
+     <Compile Include="Assets\Scripts\GameResources.cs" />
+     <Compile Include="Assets\Scripts\GameState.cs" />
+     <Compile Include="Assets\Scripts\Graph.cs" />
+     <Compile Include="Assets\Scripts\HighScores.cs" />
+     <Compile Include="Assets\Scripts\Login.cs" />
+     <Compile Include="Assets\Scripts\Main.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\MessageBox.cs" />
+     <Compile Include="Assets\Scripts\MessageQueue.cs" />
+     <Compile Include="Assets\Scripts\PlayerListing.cs" />
+     <Compile Include="Assets\Scripts\ProgressBar.cs" />
+     <Compile Include="Assets\Scripts\Register.cs" />
+     <Compile Include="Assets\Scripts\Shop\Shop.cs" />
+     <Compile Include="Assets\Scripts\Shop\ShopCartPanel.cs" />
+     <Compile Include="Assets\Scripts\Shop\ShopInfoPanel.cs" />
+     <Compile Include="Assets\Scripts\Shop\ShopPanel.cs" />
+     <Compile Include="Assets\Scripts\Shop\TutorialShop.cs" />
+     <Compile Include="Assets\Scripts\Shop\TutorialShopCartPanel.cs" />
+     <Compile Include="Assets\Scripts\Shop\TutorialShopInfoPanel.cs" />
+     <Compile Include="Assets\Scripts\Shop\TutorialShopPanel.cs" />
+     <Compile Include="Assets\Scripts\Species.cs" />
+     <Compile Include="Assets\Scripts\SpeciesData.cs" />
+     <Compile Include="Assets\Scripts\SpeciesStatisticsGraph.cs" />
+     <Compile Include="Assets\Scripts\SpeciesTable.cs" />
+     <Compile Include="Assets\Scripts\SpeciesViewer.cs" />
+     <Compile Include="Assets\Scripts\Strings.cs" />
+     <Compile Include="Assets\Scripts\TerrainController.cs" />
+     <Compile Include="Assets\Scripts\TileExample.cs" />
+     <Compile Include="Assets\Scripts\TileTriggers.cs" />
+     <Compile Include="Assets\Scripts\Tutorial.cs" />
+     <Compile Include="Assets\Scripts\TutorialSpeciesViewer.cs" />
+     <Compile Include="Assets\Scripts\World\World.cs" />
+     <Compile Include="Assets\Scripts\WorldData.cs" />
+     <Compile Include="Assets\Scripts\WorldMenu.cs" />
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>Assets\Plugins\Mono.Data.Sqlite.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><MonoDevelop><Properties><Policies><TextStylePolicy TabWidth="4" inheritsSet="Mono" inheritsScope="text/plain" scope="text/x-csharp" /><CSharpFormattingPolicy NamespaceBraceStyle="EndOfLine" ClassBraceStyle="EndOfLine" InterfaceBraceStyle="EndOfLine" StructBraceStyle="EndOfLine" EnumBraceStyle="EndOfLine" MethodBraceStyle="EndOfLine" ConstructorBraceStyle="EndOfLine" DestructorBraceStyle="EndOfLine" BeforeMethodDeclarationParentheses="False" BeforeMethodCallParentheses="False" BeforeConstructorDeclarationParentheses="False" BeforeDelegateDeclarationParentheses="False" NewParentheses="False" SpacesBeforeBrackets="False" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" /><TextStylePolicy FileWidth="120" TabWidth="4" EolMarker="Unix" inheritsSet="Mono" inheritsScope="text/plain" scope="text/plain" /></Policies></Properties></MonoDevelop></ProjectExtensions>
+
+</Project>

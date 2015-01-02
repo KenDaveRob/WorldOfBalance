@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Network\Response\ResponseChallengeShopSpecies.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Tutorial.cs" Line="230" Column="21" />
+      <File FileName="..\jung\WoB_Client\Assets\Scripts\Tutorial.cs" Line="29" Column="2" />
+      <File FileName="..\jung\WoB_Client\Assets\Scripts\Strings.cs" Line="58" Column="9" />
+      <File FileName="Assets\Network\Request\RequestChallengeShopSpecies.cs" Line="15" Column="1" />
+      <File FileName="Assets\Network\Response\ResponseChallengeShopSpecies.cs" Line="8" Column="50" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
